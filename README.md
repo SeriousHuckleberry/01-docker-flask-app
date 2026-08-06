@@ -30,3 +30,7 @@ python app.py
 Open:
 
 http://localhost:5000
+
+## Screenshot
+
+![Application Running](screenshots/app-running.png)
