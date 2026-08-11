@@ -3,3 +3,15 @@ services:
     image: flask-app:v2
     ports:
       - "5000:5000"
+
+  postgres:
+    image: postgres:16
+    environment:
+      - POSTGRES_DB=flaskdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres-data:/var/lib/postgressql/data
+    
+volumes:
+  postgres-data:
